@@ -3,7 +3,7 @@ import pandas as pd
 import seaborn as sns
 
 st.title("Chess Data EDA")
-chess = pd.read_csv("~/Downloads/games.csv")
+chess = pd.read_csv("games.csv")
 
 st.header("Distribution")
 option = st.selectbox("Which distribution would you like to see?", ("Victory Status", "Winner"))
