@@ -1,7 +1,7 @@
-import streamlit as st 
-import seaborn as sns
-import pandas as pd
-import plotly.express as px
+streamlit as st 
+seaborn as sns
+pandas as pd
+plotly.express as px
 
 iris = sns.load_dataset('iris')
 st.write("""
