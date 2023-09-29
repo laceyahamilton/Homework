@@ -1,5 +1,5 @@
-seaborn
-pandas
-streamlit
-sklearn
-altair
+seaborn==0.11.2
+pandas==1.4.3
+streamlit==1.26.0
+sklearn--1.3.1
+altair==4.2.0
