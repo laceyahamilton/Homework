@@ -3,7 +3,7 @@ import seaborn as sns
 import pandas as pd
 from sklearn.datasets import load_wine
 import altair as alt
-pip freeze > requirements.txt
+
 
 wine_data = load_wine()
 labels = wine_data.feature_names
