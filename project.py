@@ -51,7 +51,7 @@ with gameplay_tab:
     	st.pyplot(openings)
     with col4:
     	st.image("openings.png")
-    	st.caption("This image shows the complexity and similariy of different openings.")
+    	st.caption("This image shows the complexity and similarities of different openings.")
 
 
 #graphs
