@@ -3,6 +3,7 @@ import pandas as pd
 import seaborn as sns
 import numpy as np
 
+st.set_page_config(layout="wide")
 st.title("A Guide To Chess")
 df = pd.read_csv("games.csv")
 st.image("chess.jpeg")
