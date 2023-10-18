@@ -30,7 +30,9 @@ with rules_tab:
     with col1:
         st.pyplot(winner)
     with col2:
-    	st.image("pieces.png")
+        st.write("Start of game setup: When the chess board is set up to start a game, half of the squares are occupied by the pieces while the middle 32 squares are left open for play.")
+        st.image("setup.png")
+        st.image("pieces.png")
 with pieces_tab:
     st.write("Here is an overview of how each piece moves")
     col00, col01, col02, col03= st.columns([1, 1, 1, 1])
