@@ -9,7 +9,7 @@ st.image("chess.jpeg")
 st.subheader("A brief overview of chess and what you can expect while learning.")
  
  #tabs
-intro_tab, rules_tab, pieces_tab, gameplay_tab, endgame_tab, rating_tab, moves_tab = st.tabs(["Introduction", "Rules", "How The Pieces Move", "Gameplay", "How to Win", "How Ratings Work", "More on Gameplay"])
+intro_tab, rules_tab, pieces_tab, gameplay_tab, endgame_tab, rating_tab, moves_tab, conclusion_tab = st.tabs(["Introduction", "Rules", "How The Pieces Move", "Gameplay", "How to Win", "How Ratings Work", "More on Gameplay", "Conclusion"])
 
 with intro_tab:
     st.write("What is chess? – Chess is one of the oldest played board games by humans. Played on a checkered board and each player playing with pieces of contrasting colors. Each player takes turns moving a piece with the goal of checkmating the King. This means a position where the King cannot evade capture.")
@@ -213,7 +213,10 @@ with moves_tab:
     with col8:
         st.image("clock.jpeg")
         st.image("olderclock.png")
-
+with conclusion_tab:
+    st.write("You now know enough of the basics to start playing chess. You can join the young, the old and everyone in between and start building your chess skills. Have fun! :) ")
+    st.image("enjoy.jpg")
+    st.image("kidschess.jpg")
 
 
 
