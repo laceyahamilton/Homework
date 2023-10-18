@@ -79,7 +79,7 @@ whitemoves = whitemoves[whitemoves['opening_name'].map(whitemoves['opening_name'
 whiteturns = sns.displot(whitemoves, x="opening_move", hue="opening_move")
 
 with gameplay_tab:
-    st.write("There three phases of the game: the opening, middlegame and endgame. The opening is where piece development occurs and sets the tone of the game as previously stated. The middlegame is the meat of the game where attacking and defense occurs, this is also a time where weaknesses in the opponent’s game can be spotted. The endgame is where final attacks and attempts to checkmate the king occur. Chess theory goes into a deep analysis of different approaches and techniques for each. There are around 1,300 named chess openings. Here we can see top 10 openings that are the most frequently played.")   
+    st.write("There are three phases of the game: the opening, middlegame and endgame. The opening is where piece development occurs and sets the tone of the game as previously stated. The middlegame is the meat of the game where attacking and defense occurs; this is also a time where weaknesses in the opponent’s game can be spotted. The endgame is where final attacks and attempts to checkmate the king occur. Chess theory goes into a deep analysis of different approaches and techniques for each. There are around 1,300 named chess openings. Here, we can see top 10 openings that are the most frequently played.")   
     col3, col4 = st.columns([1, 1])
     with col3:
         choose = st.radio(
@@ -172,7 +172,7 @@ blackranking.set(ylabel='Count')
 
 
 with rating_tab:
-	st.write("There is a rating system that indicates how good you are at the game. As you win and lose throughout your career, your rating will go up or down depending on the rating on the opponent and whether or not you won or lost. The highest ever rating achieved was by GM Magnus Carlsen with 2882 rating. Using the Elo rating system, there are 11 categories to be put into as seen below")
+	st.write("There is a rating system that indicates how good you are at the game. As you win and lose throughout your career, your rating will go up or down depending on the rating on the opponent and whether or not you won or lost. The highest ever rating achieved was by GM Magnus Carlsen with 2882 rating. Using the Elo rating system, there are 11 categories to be put into as seen below. Here is the distribution of those ratings in the dataset.")
 	col7, col8 = st.columns([1, 1])
 	with col7:
 		color = st.radio(
@@ -199,7 +199,7 @@ whiteturn.set(xlabel='Rankings')
 whiteturn.set(ylabel='Turn')
 
 with moves_tab:
-    st.write("In the early 1800s, a competitive game tactic was to run the game out as long as possible to exhaust the opponent. Since then clock have been used to avoid this. When each player moves, they will hit the clock and the opponent's time will start ticking and this will go back and forth with each turn. The time on each clock set with an agreed time. Running out of time means forfeiting the game. The evolution of chess clocks have gone through pocketwatches, sand-timers, mechanical chess clocks and modern day digital chess clocks. With this time limit, there are only so many reasonable moves you can make within the time frame. The average number of moves in a game is 40 moves. Due to this, one may think that more experienced players may make less moves because they are thinking more efficiently and find checkmate quicker. But that is not the case. Here, we can see that the number of moves against the rating of the player has no apparent correlation.")
+    st.write("In the early 1800s, a competitive game tactic was to run the game out as long as possible to exhaust the opponent. Since then clocks have been used to avoid this. When each player moves, they will hit the clock and the opponent's time will start ticking and this will go back and forth with each turn. The time on each clock is set with an agreed time. Running out of time means forfeiting the game. The evolution of chess clocks have gone through pocketwatches, sand-timers, mechanical chess clocks and modern day digital chess clocks. With this time limit, there are only so many reasonable moves you can make within the time frame. The average number of moves in a game is 40 moves. Due to this, one may think that more experienced players may make less moves because they are thinking more efficiently and find checkmate quicker. But that is not the case. Here, we can see that the number of moves against the rating of the player has no apparent correlation.")
     col7, col8 = st.columns([1, 1])
     with col7:
         color1 = st.radio(
