@@ -188,14 +188,12 @@ with rating_tab:
 
 sns.set_palette("magma", n_colors = 11)
 blackturn = sns.relplot(data=df, x="black_rating", y="turns", hue = "turns")
-blackturn.set(xticklabels=[])
 blackturn.set(title='Number of Turns by Black ranking')
 blackturn.set(xlabel='Rankings')
 blackturn.set(ylabel='Turn')
 
 sns.set_palette("magma", n_colors = 11)
 whiteturn = sns.relplot(data=df, x="white_rating", y="turns", hue = "turns")
-whiteturn.set(xticklabels=[])
 whiteturn.set(title='Number of Turns by White ranking')
 whiteturn.set(xlabel='Rankings')
 whiteturn.set(ylabel='Turn')
